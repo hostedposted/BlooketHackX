@@ -1,0 +1,23 @@
+body {
+    width: 450px;
+    height: 500px;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+:root {
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}

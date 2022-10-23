@@ -1,0 +1,5 @@
+node_modules
+build
+src/hacks
+src/utils
+src/declarations.d.ts

@@ -1,0 +1,44 @@
+{
+    "manifest_version": 3,
+    "name": "Blooket Hacking Extension | X Loader",
+    "version": "1.0.0",
+    "description": "Easily hack Blooket using X Loader!",
+    "icons": {
+        "16": "icons/16.png",
+        "32": "icons/32.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png",
+        "1280": "icons/1280.png"
+    },
+    "action": {
+        "default_title": "Blooket Hacking Extension | X Loader",
+        "default_popup": "popup.html"
+    },
+    "host_permissions": [
+        "*://*.blooket.com/*",
+        "*://raw.githubusercontent.com/*"
+    ],
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "rulesets",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.blooket.com/*"
+            ],
+            "js": [
+                "contentScript.js"
+            ]
+        }
+    ]
+}
