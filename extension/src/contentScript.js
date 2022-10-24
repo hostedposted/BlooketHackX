@@ -1,6 +1,6 @@
 async function insertCode () {
     try {
-        const cheatMenuRequest = await (await fetch("https://raw.githubusercontent.com/hostedposted/BlooketX/master/dist/bundle.js")).text()
+        const cheatMenuRequest = await (await fetch("https://raw.githubusercontent.com/hostedposted/BlooketHackX/master/dist/bundle.js")).text()
         document.documentElement.setAttribute("onreset", cheatMenuRequest.replaceAll("new URL", "new window.URL"))
         document.documentElement.dispatchEvent(new CustomEvent("reset"))
         document.documentElement.removeAttribute("onreset")
